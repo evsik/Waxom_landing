@@ -1,1 +1,56 @@
 @import "../../packages/bootstrap-4.5.3/scss/bootstrap";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../packages/fonts/Montserrat");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../packages/fonts/Raleway");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../packages/fonts/Roboto");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.container {
+
+}
+
+header {
+  //background: url("../../images/header-background.jpg") no-repeat center center;
+  //background-size: cover;
+  //height: 1000px;
+}
+
+.header-background {
+  background: url("../../images/header-background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+}
