@@ -86,15 +86,28 @@ header {
   background: url("../../images/header-background.jpg") no-repeat center center;
   background-size: cover;
   height: 50vw;
+
+  @include media-breakpoint-down(sm) {
+    height: 400px;
+  }
 }
 
 .b-nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down(sm) {
+    justify-content: space-evenly;
+  }
 }
 
 .b-logo {
   display: flex;
+
+  @include media-breakpoint-down(sm) {
+    align-self: baseline;
+  }
 
   .b-logo__img {
   }
@@ -105,6 +118,10 @@ header {
     margin: 0;
     align-self: center;
     color: $varColorWhite;
+
+    @include media-breakpoint-down(md) {
+      font-size: 26px;
+    }
   }
 }
 
@@ -115,8 +132,16 @@ header {
     list-style-type: none;
     display: flex;
 
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
     .b-menu__list {
       margin-right: 30px;
+
+      @include media-breakpoint-down(lg) {
+        margin-right: 15px;
+      }
 
       .b-menu__link {
         display: inline-block;
@@ -130,6 +155,10 @@ header {
           transform: scale(1.1);
           color: $varColorHover;
         }
+
+        @include media-breakpoint-down(md) {
+          font-size: 11px;
+        }
       }
 
       &:last-of-type {
@@ -137,4 +166,44 @@ header {
       }
     }
   }
+}
+
+.carousel-caption {
+  top: 30%;
+
+  h5 {
+    color: #ffffff;
+    font-family: RalewayMedium, serif;
+    font-size: 36px;
+    font-weight: 500;
+
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    font-family: MontserratLight, serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 11px;
+    }
+  }
+}
+
+.carousel-control-prev-icon {
+  background: url("../../images/left.svg");
+  width: 40px;
+  height: 73px;
+}
+
+.carousel-control-next-icon {
+  background: url("../../images/right.svg");
+  width: 40px;
+  height: 73px;
 }
