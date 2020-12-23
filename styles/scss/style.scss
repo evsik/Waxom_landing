@@ -1,4 +1,5 @@
 @import "../../packages/bootstrap-4.5.3/scss/bootstrap";
+@import "variablesColors";
 
 @font-face {
   font-family: "MontserratLight";
@@ -70,28 +71,70 @@ body {
 
 }
 
+.slider {
+  position: relative;
+}
+
 header {
-  //background: url("../../images/header-background.jpg") no-repeat center center;
-  //background-size: cover;
-  //height: 1000px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  padding-top: 20px;
 }
 
 .header-background {
   background: url("../../images/header-background.jpg") no-repeat center center;
   background-size: cover;
-  height: 50vh;
+  height: 50vw;
 }
 
-.b-logo{
+.b-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-logo {
   display: flex;
 
-  .b-logo__img{}
+  .b-logo__img {
+  }
 
-  .b-logo__head{
+  .b-logo__head {
     font-family: RalewayRegular, serif;
     font-size: 34px;
-    font-weight: 400;
     margin: 0;
     align-self: center;
+    color: $varColorWhite;
+  }
+}
+
+.b-menu {
+  align-self: flex-end;
+
+  .b-menu__ul {
+    list-style-type: none;
+    display: flex;
+
+    .b-menu__list {
+      margin-right: 30px;
+
+      .b-menu__link {
+        display: inline-block;
+        color: $varColorWhite;
+        font-family: MontserratLight, serif;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.6s;
+
+        &:hover {
+          transform: scale(1.1);
+          color: $varColorHover;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
   }
 }
