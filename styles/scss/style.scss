@@ -1,18 +1,45 @@
 @import "../../packages/bootstrap-4.5.3/scss/bootstrap";
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../../packages/fonts/Montserrat");
+  font-family: "MontserratLight";
+  src: url("../../packages/fonts/Montserrat/Montserrat-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Raleway";
-  src: url("../../packages/fonts/Raleway");
+  font-family: "MontserratRegular";
+  src: url("../../packages/fonts/Montserrat/Montserrat-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../packages/fonts/Roboto");
+  src: url("../../packages/fonts/Roboto/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../../packages/fonts/Raleway/static/Raleway-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RalewayMedium";
+  src: url("../../packages/fonts/Raleway/static/Raleway-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../../packages/fonts/Raleway/static/Raleway-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
 }
 
 * {
@@ -53,4 +80,18 @@ header {
   background: url("../../images/header-background.jpg") no-repeat center center;
   background-size: cover;
   height: 50vh;
+}
+
+.b-logo{
+  display: flex;
+
+  .b-logo__img{}
+
+  .b-logo__head{
+    font-family: RalewayRegular, serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0;
+    align-self: center;
+  }
 }
