@@ -1,0 +1,6 @@
+$varFontFamilyMontserratLight: MontserratLight, serif;
+$varFontFamilyMontserratRegular: MontserratRegular, serif;
+$varFontFamilyRoboto: Roboto, serif;
+$varFontFamilyRalewayRegular: RalewayRegular, serif;
+$varFontFamilyRalewayMedium: RalewayMedium, serif;
+$varFontFamilyRalewayBold: RalewayBold, serif;
