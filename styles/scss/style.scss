@@ -204,3 +204,110 @@ header {
   width: 40px;
   height: 73px;
 }
+
+main {
+  flex-grow: 1;
+}
+
+.b-servicesBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+  align-items: end;
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// модификатор паддинг
+.b-servicesBlock_padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.b-designArticle {
+
+  &:hover div, &:hover h4 {
+    opacity: 1;
+    color: $varColorHover;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  h4 {
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  div {
+    width: 70px;
+    height: 3px;
+    background-color: $varColorHover;
+    display: inline-block;
+    opacity: 0;
+  }
+}
+
+.b-developArticle {
+  @extend .b-designArticle;
+
+  img {
+    @extend .b-designArticle;
+  }
+
+  h4 {
+  }
+
+  p {
+  }
+
+  div {
+    @extend .b-designArticle;
+  }
+}
+
+.b-customArticle {
+  @extend .b-designArticle;
+
+  img {
+    @extend .b-designArticle;
+  }
+
+  h4 {
+  }
+
+  p {
+  }
+
+  div {
+    @extend .b-designArticle;
+  }
+}
+
+.b-marketArticle {
+  @extend .b-designArticle;
+
+  img {
+    @extend .b-designArticle;
+  }
+
+  h4 {
+  }
+
+  p {
+  }
+
+  div {
+    @extend .b-designArticle;
+  }
+}
