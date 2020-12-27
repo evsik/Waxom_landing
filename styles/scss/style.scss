@@ -311,3 +311,8 @@ main {
     @extend .b-designArticle;
   }
 }
+
+footer {
+  flex-shrink: 0;
+  background-color: #191919;
+}
