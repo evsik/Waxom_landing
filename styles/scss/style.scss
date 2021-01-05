@@ -427,3 +427,23 @@ footer {
     color: #363636;
   }
 }
+
+.b-dribbleWidget {
+  @extend .b-recentPosts;
+
+  .b-dribbleWidget__head {
+    @extend .b-recentPosts__head;
+
+  }
+
+  .b-dribbleWidget__wrapperForImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    .b-dribbleWidget__img {
+    }
+  }
+
+
+}
