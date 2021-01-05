@@ -319,6 +319,7 @@ footer {
 
 .b-footerContentWrapper {
   @extend .b-servicesBlock;
+  align-items: flex-start;
 
   //@include media-breakpoint-down(md) {
   //  @extend .b-servicesBlock;
