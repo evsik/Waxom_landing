@@ -395,3 +395,35 @@ footer {
     font-size: 14px;
   }
 }
+
+.b-liveTwitter {
+  @extend .b-recentPosts;
+
+  .b-liveTwitter__head {
+
+    @extend .b-recentPosts__head;
+  }
+}
+
+.b-twitterPost {
+  @extend .b-post;
+
+  .b-twitterPost__text {
+    @extend .b-post__text;
+    margin-bottom: 0;
+
+    a {
+      color: #959595;
+    }
+
+    span {
+      color: #00bff3;
+    }
+  }
+
+  .b-twitterPost__data {
+
+    @extend .b-post__data;
+    color: #363636;
+  }
+}
