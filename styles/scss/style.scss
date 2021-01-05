@@ -72,6 +72,12 @@ body {
 
 }
 
+// модификатор паддинг
+.site_padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .slider {
   position: relative;
 }
@@ -225,12 +231,6 @@ main {
   }
 }
 
-// модификатор паддинг
-.b-servicesBlock_padding {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 .b-designArticle {
 
   &:hover div, &:hover h4 {
@@ -315,4 +315,37 @@ main {
 footer {
   flex-shrink: 0;
   background-color: #191919;
+}
+
+.b-footerContentWrapper {
+  @extend .b-servicesBlock;
+
+  //@include media-breakpoint-down(md) {
+  //  @extend .b-servicesBlock;
+  //}
+  //
+  //@include media-breakpoint-down(sm) {
+  //  @extend .b-servicesBlock;
+  //}
+}
+
+.b-aboutWaxomArticle{
+  text-align: left;
+
+  .b-aboutWaxomArticle__text{
+    color: $varColorFooterText;
+    font-family: $varFontFamilyMontserratLight;
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .b-aboutWaxomArticle__link{
+    color: #d1d1d1;
+    font-family: $varFontFamilyMontserratRegular;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+
 }
