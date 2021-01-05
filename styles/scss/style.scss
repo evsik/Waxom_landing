@@ -330,18 +330,19 @@ footer {
   //}
 }
 
-.b-aboutWaxomArticle{
+.b-aboutWaxomArticle {
   text-align: left;
 
-  .b-aboutWaxomArticle__text{
+  .b-aboutWaxomArticle__text {
     color: $varColorFooterText;
     font-family: $varFontFamilyMontserratLight;
     line-height: 24px;
     margin-bottom: 30px;
     margin-top: 30px;
+    font-size: 14px;
   }
 
-  .b-aboutWaxomArticle__link{
+  .b-aboutWaxomArticle__link {
     color: #d1d1d1;
     font-family: $varFontFamilyMontserratRegular;
     font-size: 14px;
@@ -349,4 +350,48 @@ footer {
     text-align: left;
   }
 
+}
+
+.b-recentPosts {
+  text-align: left;
+
+  .b-recentPosts__head {
+    color: $varColorWhite;
+    font-family: $varFontFamilyRalewayBold;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+.b-post {
+  margin-bottom: 30px;
+
+  .b-post__data {
+    color: #363636;
+    font-family: $varFontFamilyMontserratLight;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .b-post__text {
+    color: $varColorFooterText;
+    font-family: $varFontFamilyMontserratLight;
+    font-size: 14px;
+  }
+}
+
+.b-post_active {
+  .b-post__data {
+    color: $varColorWhite;
+    font-family: $varFontFamilyMontserratLight;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .b-post__text {
+    color: $varColorHover;
+    font-family: $varFontFamilyMontserratLight;
+    font-size: 14px;
+  }
 }
